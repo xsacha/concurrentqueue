@@ -66,8 +66,8 @@ class Semaphore
 private:
 	void* m_hSema;
 	
-	Semaphore(const Semaphore& other) MOODYCAMEL_DELETE_FUNCTION;
-	Semaphore& operator=(const Semaphore& other) MOODYCAMEL_DELETE_FUNCTION;
+	Semaphore(const Semaphore& other) = delete;
+	Semaphore& operator=(const Semaphore& other) = delete;
 
 public:
 	Semaphore(int initialCount = 0)
@@ -114,8 +114,8 @@ class Semaphore
 private:
 	semaphore_t m_sema;
 
-	Semaphore(const Semaphore& other) MOODYCAMEL_DELETE_FUNCTION;
-	Semaphore& operator=(const Semaphore& other) MOODYCAMEL_DELETE_FUNCTION;
+	Semaphore(const Semaphore& other) = delete;
+	Semaphore& operator=(const Semaphore& other) = delete;
 
 public:
 	Semaphore(int initialCount = 0)
@@ -174,8 +174,8 @@ class Semaphore
 private:
 	sem_t m_sema;
 
-	Semaphore(const Semaphore& other) MOODYCAMEL_DELETE_FUNCTION;
-	Semaphore& operator=(const Semaphore& other) MOODYCAMEL_DELETE_FUNCTION;
+	Semaphore(const Semaphore& other) = delete;
+	Semaphore& operator=(const Semaphore& other) = delete;
 
 public:
 	Semaphore(int initialCount = 0)
