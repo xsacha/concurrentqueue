@@ -74,8 +74,8 @@ public:
 	}
 	
 	// Disable copying and copy assignment
-	BlockingConcurrentQueue(BlockingConcurrentQueue const&) MOODYCAMEL_DELETE_FUNCTION;
-	BlockingConcurrentQueue& operator=(BlockingConcurrentQueue const&) MOODYCAMEL_DELETE_FUNCTION;
+	BlockingConcurrentQueue(BlockingConcurrentQueue const&) = delete;
+	BlockingConcurrentQueue& operator=(BlockingConcurrentQueue const&) = delete;
 	
 	// Moving is supported, but note that it is *not* a thread-safe operation.
 	// Nobody can use the queue while it's being moved, and the memory effects
